@@ -1,10 +1,9 @@
 # Modification par Fabien le 08/02/2020
-
 import random as rd
 
 compteJoueur = 0 # va servir a affecter un numero derriere chaque joueur pour les differencier
 def incremente_joueur():
-    global compteJoueur
+    global compteJoueur # explique qu'on se referre à la variable globale, sinon on ne peut la modifier depuis une methode
     compteJoueur += 1
 
 class joueur:
