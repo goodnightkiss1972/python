@@ -1,6 +1,6 @@
 # au prealable mettre a jour PIP : python3 -m pip install pip --upgrade
-# puis installer curses avec la whl telechargee curses-2.2.1+utf8-cp38-cp38-win_amd64
-# je ne sais pas à quoi sert w1s-curses
+# puis installer curses avec la whl telechargee curses-2.2.1+utf8-cp38-cp38-win_amd64 (https://www.lfd.uci.edu/~gohlke/pythonlibs/#curses)
+# je ne sais pas à quoi sert windows-curses peut être une histoire de redimmensionnement de terminal
 
 import curses
 import time
