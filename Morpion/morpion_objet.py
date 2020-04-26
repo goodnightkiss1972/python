@@ -29,14 +29,17 @@ class morpion:
     -   les joueurs
     """
     def __init__(self, premierJoueur, deuxiemeJoueur):
-        self.plateau = [[0,0,0],[0,0,0],[0,0,0]]
+        self.initialiser_plateau()
         self.joueurs = [joueur(premierJoueur, 1), joueur(deuxiemeJoueur, -1)]
 
-    """ question2)
-    écrire une fonction afficher_plateau() qui permet d'afficher le plateau ligne par ligne avec des 
-    jetons à la place des 1 et -1, et rien à la place des 0.
-    """
+    def initialiser_plateau(self):
+        self.plateau = [[0,0,0],[0,0,0],[0,0,0]]
+
     def afficher_plateau(self):
+        """ question2)
+        écrire une fonction afficher_plateau() qui permet d'afficher le plateau ligne par ligne avec des 
+        jetons à la place des 1 et -1, et rien à la place des 0.
+        """
         for i in range(3):
             ligne = []
             for j in range(3):
@@ -164,4 +167,10 @@ class morpion:
             return
         
 partie = morpion("ordinateur", "ordinateur")
+print('*************** PREMIERE PARTIE *****************')
 partie.jouer()
+partie.initialiser_plateau()
+print('*************** DEUXIEME PARTIE *****************')
+partie.jouer()
+
+
