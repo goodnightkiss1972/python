@@ -27,6 +27,8 @@ for i in range(5):
 
 time.sleep(3)
 
+curses.endwin()
+
 """ 
 begin_x = 20; begin_y = 7
 height = 5; width = 40
